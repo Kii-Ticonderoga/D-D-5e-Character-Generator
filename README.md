@@ -1,2 +1,2 @@
-# D-D-5e-Character-Generator
+# DnD-5e-Character-Generator
 Auto Generates a random PC
