@@ -12,7 +12,7 @@ while (x<6):
 	y=1
 	while (y<4):
 		statRoll = random.randint(2,6)
-		statNumber.append(firstRoll)
+		statNumber.append(statRoll)
 		#print (statNumber)
 		y=y+1
 	statList.append(sum(statNumber))
