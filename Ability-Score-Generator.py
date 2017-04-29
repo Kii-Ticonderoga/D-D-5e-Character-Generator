@@ -1,6 +1,6 @@
 import random
 
-print ("Ability Score Generation")
+print ("Ability Score Generation\n")
 
 #statNumber = []
 statList = []
@@ -16,11 +16,14 @@ while (x<6):
 		#print (statNumber)
 		y=y+1
 	statList.append(sum(statNumber))
-	modifier = ((statList[x] - 10)/2)
-	statModifier.append(modifier)
+	modifier = ((statList[x] - 10)//2)
+	statModifier.append((modifier))
 	#print (sum(statNumber))	
 	x=x+1
 
-print (statModifier)
+
+print ("Ability Scores:")
 print (statList)
 
+print ("\nAbility Modifiers:")
+print (statModifier)
