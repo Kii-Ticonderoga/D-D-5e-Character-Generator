@@ -1,23 +1,29 @@
 import random
 
-print ("Ability Score Generation")
+print ("Ability Score Generation\n")
 
-statNumber = []
+#statNumber = []
 statList = []
+statModifier = []
 
-x=1
-while (x<7):
+x=0
+while (x<6):
+	statNumber = []
 	y=1
 	while (y<4):
-		firstRoll = random.randint(2,6)
-		statNumber.append(firstRoll)
+		statRoll = random.randint(2,6)
+		statNumber.append(statRoll)
 		#print (statNumber)
 		y=y+1
 	statList.append(sum(statNumber))
-	#print (sum(statNumber))
-	statNumber = []
+	modifier = ((statList[x] - 10)//2)
+	statModifier.append((modifier))
+	#print (sum(statNumber))	
 	x=x+1
 
 
+print ("Ability Scores:")
 print (statList)
 
+print ("\nAbility Modifiers:")
+print (statModifier)
