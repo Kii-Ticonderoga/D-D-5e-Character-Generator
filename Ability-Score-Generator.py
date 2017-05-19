@@ -9,8 +9,8 @@ statModifier = []
 x=0
 while (x<6):
 	statNumber = []
-	y=1
-	while (y<4):
+	y=0
+	while (y<3):
 		statRoll = random.randint(2,6)
 		statNumber.append(statRoll)
 		#print (statNumber)
@@ -22,8 +22,6 @@ while (x<6):
 	x=x+1
 
 
-print ("Ability Scores:")
-print (statList)
+print ("Ability Scores: " + statlist + "\n")
 
-print ("\nAbility Modifiers:")
-print (statModifier)
+print ("Ability Modifiers: " + ("+" if statModifier >= 0) + statmodifier + "\n")
