@@ -24,4 +24,4 @@ while (x<6):
 
 print ("Ability Scores: " + statlist + "\n")
 
-print ("Ability Modifiers: " + statModifier + "\n")
+print ("Ability Modifiers: " + ("+" if statModifier >= 0) + statmodifier + "\n")
