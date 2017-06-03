@@ -2,32 +2,20 @@ import random
 
 print ("Ability Score Generation\n")
 
-#statNumber = []
 statList = []
 statModifier = []
+statName = ["STR","DEX","CON","INT","WIS","CHA"]
 
-x=0
-while (x<6):
+for x in range(0,6):
 	statNumber = []
-	y=0
-	while (y<3):
+	for y in range(0,3):
 		statRoll = random.randint(2,6)
 		statNumber.append(statRoll)
-		#print (statNumber)
-		y=y+1
 	statList.append(sum(statNumber))
 	modifier = ((statList[x] - 10)//2)
 	statModifier.append((modifier))
-	#print (sum(statNumber))	
-	x=x+1
 
+print ("Ability Scores:\n")
 
-print ("Ability Scores:")
-print (statList)
-
-print ("\nAbility Modifiers:")
-print (statModifier)
-
-#print ("Ability Scores: " + statList + "\n")
-
-#print ("Ability Modifiers: " + ("+" if statModifier >= 0) + statModifier + "\n")
+for x in range(0,6):
+        print(str(statName[x]) + " = " + str(statList[x]) + " -> " + ("+" if statModifier[x] > 0 else "") + str(statModifier[x]) + "\n")
