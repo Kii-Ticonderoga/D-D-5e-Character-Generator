@@ -22,6 +22,12 @@ while (x<6):
 	x=x+1
 
 
-print ("Ability Scores: " + statlist + "\n")
+print ("Ability Scores:")
+print (statList)
 
-print ("Ability Modifiers: " + ("+" if statModifier >= 0) + statmodifier + "\n")
+print ("\nAbility Modifiers:")
+print (statModifier)
+
+#print ("Ability Scores: " + statList + "\n")
+
+#print ("Ability Modifiers: " + ("+" if statModifier >= 0) + statModifier + "\n")
